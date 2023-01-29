@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>webpage Design</title>
+</head>
+<body>
+  <div class="container">
+     <header>
+         <div class="logo">
+           <a href="">mamondots</a>
+         </div>
+         <div class="menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">products</a></li>
+              <li><a href="">GALLERY</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+         </div>
+     </header>
+     <div class="content">
+          <div class="left-info">
+             <h1>Quality apparel <br>
+              without the price tag
+            </h1>
+            <p class="text">
+              No need to spend $xxx on apparel just for the name’s <br>sake. Our premium apparel is made from the same <br>
+              stuff.
+            </p>
+            <div class="btn">
+                <a href="" class="btn01">Browse our collection</a>
+                <a href="" class="btn02">Spring ‘23 Collection <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="text-box">
+               <h2>50K</h2>
+               <p class="detils">
+                We’re proud to announce that we now <br>
+                employ a workforce of over 50,000. It’s all <br>
+                possible because of you.
+               </p>
+               <img src="img/color.png">
+            </div>
+          </div>
+          <div class="left-info">
+            <div class="prodict-boxes">
+               <div class="product-box product-01">
+                 <img src="img/symbul.png">
+                    <div class="product-info">
+                        <div class="product-title">
+                           <h2>Fauxica Sport</h2>
+                           <p class="brand">Running shoe</p>
+                        </div>
+                        <h3>$59</h3>
+                    </div>
+               </div>
+               <div class="product-box product-02">
+                <div class="product-info">
+                  <div class="product-title">
+                     <h2>Fauxica Sport</h2>
+                     <p class="brand">Running shoe</p>
+                  </div>
+                  <h3>$59</h3>
+              </div>
+               </div>
+               <div class="product-box product-03">
+                <div class="product-info">
+                  <div class="product-title">
+                     <h2>Fauxica Sport</h2>
+                     <p class="brand">Running shoe</p>
+                  </div>
+                  <h3>$59</h3>
+              </div>
+               </div>
+              </div>
+          </div>
+     </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+       let animation = anime({
+         targets:'header',
+         translateX:[180,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine'
+     });
+
+     anime({
+         targets:'.left-info h1',
+         translateX:[80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:500,
+     });
+
+     anime({
+         targets:'.left-info .text',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:500,
+     });
+
+     anime({
+         targets:'.left-info .btn',
+         translateY:[-40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:800,
+     });
+
+     anime({
+         targets:'.left-info .text-box',
+         translateY:[40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:800,
+     });
+
+     anime({
+         targets:'.product-01',
+         translateX:[-60,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1000,
+     });
+
+     anime({
+         targets:'.product-02',
+         translateY:[-60,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1000,
+     });
+     anime({
+         targets:'.product-03',
+         translateY:[60,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1000,
+     });
+
+</script>
+</body>
+</html>
